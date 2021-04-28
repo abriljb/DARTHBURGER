@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+.Header{
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    height:10vh;
+    z-index: 3;
+    
+    
+
+   /* CSS GRID */
+   display: grid;
+   grid-template-columns: 120px 1fr 100px 5px; 
+   place-items: center;
+}
+
+.header1 h5{
+    color: white;
+    font-size: 15px;
+}
+
+.header3 .fa{
+    color: white;
+    font-size: 30px;
+}
+
+#dropdown{
+    background-color: black;
+    height: 90px;
+}
+
+.Dhide{
+    list-style: none;
+    position: fixed;
+    width: 100vw;
+    color: white;
+
+
+   /* CSS GRID */
+   display: grid;
+   grid-template-rows: auto;
+   justify-items: center;
+   align-items: end;
+   top: 68px;
+   transition-duration: 700ms;
+}
+.Dshow li:hover{
+   transition-duration: 1s;
+}
+
+.Dshow{
+   list-style: none;
+   background-color: grey;
+   position: fixed;
+   width: 100vw;
+   top: -120px;
+   transition-duration: 700ms;
+
+  /* CSS GRID */
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+   align-items: end;
+  row-gap: 5px;
+  z-index: 1;
+}
+
+#dropdown li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.Home{
+   width: 100vw;
+   height: 100vh;
+   background-image: url(./img/wakanda.png);
+   background-color: rgb(243, 243, 243);
+   background-position: left;
+   background-size:cover;
+   background-repeat: no-repeat;
+   
+}
+
+.Home .quotes{
+   display: flex;
+   justify-content:center;
+   align-items: flex-start;
+   width: 100vw;
+   height: 100vh;
+   color: white;
+}
+
+
+.quotes h1{
+   margin-top: 50px;
+   font-size: 30px;
+   border-bottom: 5px solid white;
+}
+
+
+/* medium device */
+@media (min-width:569px) and (max-width:768px ){
+    .Header{
+     position: fixed;
+     width: 100vw;
+     background-color: black;
+     height: 5vh;
+     z-index: 3;
+     
+
+    /* CSS GRID */
+    display: grid;
+    grid-template-columns: 120px 1fr 100px 5px; 
+    place-items: center;
+ }
+
+ .header1 h5{
+     color: white;
+     
+ }
+
+ .header3 .fa{
+     color: white;
+     font-size: 30px;
+ }
+
+ #dropdown{
+     background-color: black;
+     height: 90px;
+ }
+
+ .Dhide{
+     list-style: none;
+     position: fixed;
+     width: 100vw;
+     color: white;
+
+
+    /* CSS GRID */
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: end;
+    top: 28px;
+    transition-duration: 700ms;
+ }
+.Dshow li:hover{
+    transition-duration: 1s;
+}
+
+ .Dshow{
+    list-style: none;
+    background-color: grey;
+    position: fixed;
+    width: 100vw;
+    top: -120px;
+    transition-duration: 700ms;
+
+   /* CSS GRID */
+   display: grid;
+   grid-template-rows: auto;
+   justify-items: center;
+    align-items: end;
+   row-gap: 5px;
+   z-index: 1;
+}
+
+#dropdown li a{
+    color: white;
+    text-decoration: none;
+}
+
+.Home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/wakanda.png);
+    background-position: center;
+    background-size:cover;
+    
+}
+
+.Home .quotes{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+
+.quotes h1{
+    margin-top: 50px;
+    font-size: 30px;
+    border-bottom: 5px solid white;
+}
+
+.Menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+
+.Menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu .boxes{
+    width: 40vw;
+    height: 40vh;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size:6px;
+    margin: 10px;
+   
+}
+
+.Info{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Info .map{
+    width: 80vw;
+    height: 50vh;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.map .mappi{
+    width: 80vw;
+    height: 50vh;
+    border-radius: 10px;
+    
+}
+
+.socialmedias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    margin-top: 20px;
+    
+}
+
+.facebook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 80vw;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+
+.instagram{
+    background-color:red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.cpnumber{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 50px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width:0px) and (max-width:568px){
+ .Header{
+     position: fixed;
+     width: 100vw;
+     background-color: black;
+     height: 5vh;
+     z-index: 3;
+     top: 1px;
+     
+
+    /* CSS GRID */
+    display: grid;
+    grid-template-columns: 120px 1fr 100px 5px; 
+    place-items: center;
+ }
+
+
+ .header1 h5{
+     color: white;
+     
+     
+ }
+
+ .header3 .fa{
+     color: white;
+     font-size: 30px;
+     
+ }
+
+ #dropdown{
+     background-color: black;
+     height: 90px;
+ }
+
+ .Dhide{
+     list-style: none;
+     position: fixed;
+     width: 100vw;
+     color: white;
+
+
+    /* CSS GRID */
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: end;
+    top: 68px;
+    transition-duration: 700ms;
+ }
+.Dshow li:hover{
+    transition-duration: 1s;
+}
+
+ .Dshow{
+    list-style: none;
+    background-color: grey;
+    position: fixed;
+    width: 100vw;
+    top: -120px;
+    transition-duration: 700ms;
+
+   /* CSS GRID */
+   display: grid;
+   grid-template-rows: auto;
+   justify-items: center;
+    align-items: end;
+   row-gap: 5px;
+   z-index: 1;
+}
+
+
+#dropdown li a{
+    color: white;
+    text-decoration: none;
+}
+
+.Home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/wakanda.png);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+
+
+.Home .quotes{ 
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+    
+}
+
+.quotes h1{
+    margin-top: 50px;
+    font-size: 25px;
+    border-bottom: 5px solid white;
+}
+
+
+.Menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu .boxes{
+    width: 30vw;
+    height: 40vh;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size:6px;
+    margin: 5px;
+   
+}
+
+.Info{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Info .map{
+    width: 80vw;
+    height: 50vh;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.map .mappi{
+    width: 80vw;
+    height: 50vh;
+    border-radius: 10px;
+    
+}
+
+.socialmedias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    margin-top: 20px;
+    
+}
+
+.facebook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 80vw;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+
+.instagram{
+    background-color:red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 50px;
+    border-radius: 10px;
+    
+
+}
+
+.cpnumber{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 50px;
+    font-size: 13px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
